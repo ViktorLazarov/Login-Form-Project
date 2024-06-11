@@ -24,8 +24,9 @@ body {
     height: 87vh;
     border: 5px solid #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;   
+    flex-direction: column;
 }
 
 .logout {
@@ -50,4 +51,94 @@ body {
     font-weight: 800;
     text-transform: capitalize;
 
+}
+
+/* *********************** */
+.scroller {
+    border: 1px solid black;
+    width: 90%;
+    max-width: 80%;
+    height: 150px;
+    margin-inline: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-top,
+.item-bottom {
+    width: 200px;
+    height: 150px;
+    background-color: red;
+    border-radius: 6px;
+    position: absolute;
+}
+
+@keyframes scrollleft {
+    to {
+        left: -200px;
+    }
+}
+
+.item-top {
+    left: 100%;
+    animation-name: scrollleft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes scrollright {
+    to {
+        right: -200px;
+    }
+}
+
+.item-bottom {
+    right: 100%;
+    animation-name: scrollright;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item1 {
+    animation-delay: calc(30s / 8 * (8-1)* -1);
+}
+
+.item2 {
+    animation-delay: calc(30s / 8 * (8-2)* -1);
+}
+
+.item3 {
+    animation-delay: calc(30s / 8 * (8-3)* -1);
+}
+
+.item4 {
+    animation-delay: calc(30s / 8 * (8-4)* -1);
+}
+
+.item5 {
+    animation-delay: calc(30s / 8 * (8-5)* -1);
+}
+
+.item6 {
+    animation-delay: calc(30s / 8 * (8-6)* -1);
+}
+
+.item7 {
+    animation-delay: calc(30s / 8 * (8-7)* -1);
+}
+
+.item8 {
+    animation-delay: calc(30s / 8 * (8-8)* -1);
+}
+
+.scroll-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
 }

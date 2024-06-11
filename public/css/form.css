@@ -77,7 +77,6 @@ input:focus::placeholder {
 }
 
 .link {
-    opacity: 0;
     text-align: center;
     text-decoration: none;
     margin: 30px auto;
@@ -85,6 +84,9 @@ input:focus::placeholder {
     color: rgba(0, 0, 0, 0.5);
     transition: 0.5s;
     display: block;
+}
+.link:hover {
+    color: rgba(0, 0, 0, 1);
 }
 
 .alert-box {
