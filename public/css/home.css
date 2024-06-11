@@ -44,7 +44,7 @@ body {
     outline: none;
 }
 
-.greeting {
+.greeting, .greeting2 {
     font-family: 'dosis';
     font-size: 100px;
     color: black;
@@ -66,7 +66,8 @@ body {
 
 .item-top,
 .item-bottom {
-    width: 200px;
+    width: auto;
+    min-width: 200px;
     height: 150px;
     background-color: red;
     border-radius: 6px;
@@ -132,6 +133,12 @@ body {
 
 .item8 {
     animation-delay: calc(30s / 8 * (8-8)* -1);
+}
+
+.item-top, .item-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .scroll-container {
