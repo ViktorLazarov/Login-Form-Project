@@ -52,7 +52,8 @@ app.post('/register-user',(req, res) => {
             res.json(data[0])
         })
         .catch(err => {
-            if(err.detail.includes('already exists')){
+            // console.log(err);
+            if(err.detail.includes('existiert bereits') || err.detail.includes('already exists')){
                 res.json('Email already exists');
             }
         })
