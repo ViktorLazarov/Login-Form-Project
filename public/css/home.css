@@ -15,6 +15,8 @@ body {
     background: url('../img/warframe_wallpaper.png');
     background-size: cover;
     background-position: center;
+    /* background-color: rgba(6, 226, 242, 0.301);
+    background-blend-mode: lighten; */
     font-family: 'roboto', sans-serif;
 }
 
@@ -25,7 +27,7 @@ body {
     border: 5px solid #fff;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;   
+    align-items: center;
     flex-direction: column;
 }
 
@@ -44,8 +46,9 @@ body {
     outline: none;
 }
 
-.greeting, .greeting2 {
-    font-family: 'dosis';
+.greeting,
+.greeting2 {
+    font-family: 'dosis', sans-serif;
     font-size: 100px;
     color: black;
     font-weight: 800;
@@ -55,7 +58,7 @@ body {
 
 /* *********************** */
 .scroller {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 90%;
     max-width: 80%;
     height: 150px;
@@ -66,12 +69,15 @@ body {
 
 .item-top,
 .item-bottom {
-    width: auto;
+    width: 200px;
     min-width: 200px;
     height: 150px;
-    background-color: red;
+    /* background-color: red; */
     border-radius: 6px;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes scrollleft {
@@ -104,42 +110,34 @@ body {
 }
 
 .item1 {
-    animation-delay: calc(30s / 8 * (8-1)* -1);
+    animation-delay: calc(30s / 5 * (5 - 1) * -1);
 }
 
 .item2 {
-    animation-delay: calc(30s / 8 * (8-2)* -1);
+    animation-delay: calc(30s / 5 * (5 - 2) * -1);
 }
 
 .item3 {
-    animation-delay: calc(30s / 8 * (8-3)* -1);
+    animation-delay: calc(30s / 5 * (5 - 3) * -1);
 }
 
 .item4 {
-    animation-delay: calc(30s / 8 * (8-4)* -1);
+    animation-delay: calc(30s / 5 * (5 - 4) * -1);  
 }
 
 .item5 {
-    animation-delay: calc(30s / 8 * (8-5)* -1);
+    animation-delay: calc(30s / 5 * (5 - 5) * -1);
 }
 
+/*
 .item6 {
-    animation-delay: calc(30s / 8 * (8-6)* -1);
+    animation-delay: calc(30s / 7 * (7 - 6) * -1);   
 }
 
 .item7 {
-    animation-delay: calc(30s / 8 * (8-7)* -1);
-}
+    animation-delay: calc(30s / 7 * (7 - 7) * -1);  
+} */
 
-.item8 {
-    animation-delay: calc(30s / 8 * (8-8)* -1);
-}
-
-.item-top, .item-bottom{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .scroll-container {
     display: flex;
