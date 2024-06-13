@@ -85,12 +85,8 @@ img {
     width: 200px;
     min-width: 200px;
     height: 150px;
-    /* background-color: red; */
     border-radius: 10px;
     position: absolute;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     background-size: cover;
 }
 
@@ -107,7 +103,11 @@ img {
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    transition: all 0.5s ease;
 
+}
+.stop-animation.paused {
+    animation-play-state: paused;
 }
 
 @keyframes scrollright {
@@ -122,7 +122,9 @@ img {
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    transition: all 0.5s ease;
 }
+
 
 .item1 {
     animation-delay: calc(30s / 5 * (5 - 1) * -1);

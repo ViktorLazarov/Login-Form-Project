@@ -18,3 +18,18 @@ logOut.onclick = () => {
     sessionStorage.clear();
     location.reload();
 }
+
+// animation stop
+document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.stop-animation');
+    
+    items.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            items.forEach(i => i.classList.add('paused'));
+        });
+        
+        item.addEventListener('mouseleave', () => {
+            items.forEach(i => i.classList.remove('paused'));
+        });
+    });
+});
